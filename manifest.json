@@ -7,7 +7,7 @@
         "css": ["styles.css"],
         "js": ["jquery.min.js","content.js"],
         "matches": [
-            "https://app.clickup.com/*/d/*"
+            "https://app.clickup.com/*"
         ]
     }]
 }
