@@ -9,5 +9,9 @@
         "matches": [
             "https://app.clickup.com/*"
         ]
-    }]
+    }],
+    "permissions": [
+        "https://app.clickup.com/",
+        "storage"
+    ]
 }
