@@ -1,103 +1,236 @@
 /* GLOBAL */
-/* Add a bigger hit box for your favorites */
-.nav-favorites-toggle__body:after {
-    content: "";
-    display: block;
+/* Custom Header Gradient background */
+body.clickup-theme[data-dashboard-version="2"] .cu2-header .cu2-header__left::before,
+body.clickup-theme[data-dashboard-version="2"] .cu2-header .cu2-header__left::after,
+body.clickup-theme[data-dashboard-version="2"] .cu2-header .cu2-header__right::before,
+body.clickup-theme[data-dashboard-version="2"] .cu2-header .cu2-header__right::after {
+    content: '';
     position: absolute;
-    width: 150px;
-    height: 75px;
-    /*background: rgba(255,0,0,0.3);*/
-    left: 0;
-    bottom:0;
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+body.clickup-theme[data-dashboard-version="2"] .cu2-header .cu2-header__left::before {
+    background: linear-gradient(to bottom right,rgba(248, 0, 231,1) 0%,rgba(248, 0, 231,0) 50%);
+		z-index: -1;
+}
+body.clickup-theme[data-dashboard-version="2"] .cu2-header .cu2-header__left::after {
+    background-image: linear-gradient(to top right, rgba(138, 0, 251,1) 0%, rgba(138, 0, 251,0) 50%);
+		z-index: -2;
+}
+body.clickup-theme[data-dashboard-version="2"] .cu2-header .cu2-header__right::before {
+    background: linear-gradient(to bottom left,rgba(248,195,36,1) 0%,rgba(248,195,36,0) 50%);
+		z-index: -1;
+}
+body.clickup-theme[data-dashboard-version="2"] .cu2-header .cu2-header__right::after {
+    background-image: linear-gradient(to top left, rgba(101, 193, 248, 1) 0%, rgba(101, 193, 248, 0) 50%);
+		z-index: -2;
+}
+body.clickup-theme[data-dashboard-version="2"] .cu2-header .cu2-header__right {
+    padding-right: 10px;
+    right: -10px;
+}
+/* Dark mode */
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-header .cu2-header__left::after,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-header .cu2-header__right::after {
+    background-image: none;
+}
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-header__container {
+		/*background: linear-gradient(to right, rgb(138, 0, 251) 0%, var(--theme-main-header-color) 50%, rgb(101, 193, 248) 100%)*/
+    background-image: linear-gradient(to right, rgb(138, 0, 251) 0%, var(--theme-main-header-color) 25%, var(--theme-main-header-color) 75%, rgb(101, 193, 248) 100%);
+}
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-header__btn,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .nav-favorites-toggle,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .notifications-alert,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu-header-quick-switcher,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-search {
+    background-color: rgba(255,255,255,.2)
+}
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-header__btn:hover,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .nav-favorites-toggle:hover,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .notifications-alert:hover,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu-header-quick-switcher:hover,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-search:hover {
+    background: white;
+}
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-header__btn_active {
+    background-color: #1e272e;
+}
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-nav-favorites-item__item_selected,
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .cu2-nav-favorites-item__item_selected:hover {
+    background: #2b343b
+}
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .notifications-alert__dot {
+		border-color: rgb(101,193,248) !important;
+}
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .notifications-alert_active use {
+    fill: white;
+    stroke: white;
+}
+body.clickup-theme.dark-theme[data-dashboard-version="2"] a.notifications-alert_active {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    height: 24px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+body.clickup-theme.dark-theme[data-dashboard-version="2"] .notifications-alert_active:hover use {
+    fill: var(--theme-main-color);
+    stroke: var(--theme-main-color);
 }
 
-/* PROJECT LIST VIEW */
-/* Give list container a matching background to group it with the list items */
-#dashboard-lv-container .lv-location {
-    background: #f5f5f5;
-    /*box-shadow: 0 0 6px 0 rgba(0,0,0,.06)*/
+/* Custom Task backdrop gradient bg */
+body.clickup-theme[data-dashboard-version="2"] cu-task-keeper .task-backdrop {
+    --theme-backdrop-opacity: 0.2;
+    background-image: linear-gradient(to right, rgba(248,0,231,var(--theme-backdrop-opacity)) 0%, rgba(248,195,36,var(--theme-backdrop-opacity)) 100%);
 }
-#dashboard-lv-container .lv-location:hover {
-    background: #f1f1f1;
+body.clickup-theme[data-dashboard-version="2"] cu-task-keeper .task-backdrop::before,
+body.clickup-theme[data-dashboard-version="2"] cu-task-keeper .task-backdrop::after {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
-.dark-theme #dashboard-lv-container .lv-location {
-    background: #384047;
+body.clickup-theme[data-dashboard-version="2"] cu-task-keeper .task-backdrop::before {
+    background-image: linear-gradient(to top right, rgba(138,0,251,var(--theme-backdrop-opacity)) 0%, rgba(138,0,251,0) 50%);
 }
-/* clean up list container layout */
-#dashboard-lv-container .lv-subcategory {
-    margin-bottom: 0;
+body.clickup-theme[data-dashboard-version="2"] cu-task-keeper .task-backdrop::after {
+    background-image: linear-gradient(to top left,rgba(101,193,248,var(--theme-backdrop-opacity)) 0%, rgba(101,193,248,0) 50%);
 }
-#dashboard-lv-container .lv-subcategory .lv-category__header .lv-location {
-    border-bottom: none;
+body.clickup-theme.dark-theme[data-dashboard-version="2"] cu-task-keeper .task-backdrop {
+    --theme-backdrop-opacity: 0.6;
 }
-.cu-section-overview__body {
+
+
+/* Dashboard 4.0 Colored favorites */
+body.dash4-colored-faves[data-dashboard-version="4"] .cu-nav-favorites-bar {
+    background: var(--theme-main-header-color);
+    position: relative;
+}
+body.dash4-colored-faves[data-dashboard-version="4"] .cu-nav-favorites-bar__title.cu-nav-favorites-bar__title_v4 {
+    color: #fff;
+}
+body.dash4-colored-faves[data-dashboard-version="4"] .cu2-nav-favorites-item_bar .cu2-nav-favorites-item__item.cu2-header__btn {
+    transition: background-color .2s cubic-bezier(.785,.135,.15,.86) 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 24px;
+    border-radius: 3px;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,.25);
+    cursor: pointer;
+    min-width: 0;
+}
+body.dash4-colored-faves[data-dashboard-version="4"] .cu2-nav-favorites-item_bar .cu2-nav-favorites-item__item.cu2-header__btn:hover,
+body.dash4-colored-faves[data-dashboard-version="4"] .cu2-nav-favorites-item_bar .cu2-nav-favorites-item__item.cu2-header__btn_active {
+    background-color: #fff;
+}
+body.dash4-colored-faves[data-dashboard-version="4"] .cu2-nav-favorites-item_bar .cu2-nav-favorites-item__item .cu2-nav-favorites-item__item-name-label {
+    color: #fff;
+}
+body.dash4-colored-faves[data-dashboard-version="4"] .cu2-nav-favorites-item__item:not(.cu2-nav-favorites-item__item_selected):hover,
+body.dash4-colored-faves[data-dashboard-version="4"] .cu2-nav-favorites-item__item:not(.cu2-nav-favorites-item__item_selected):hover .cu2-nav-favorites-item__item-name,
+body.dash4-colored-faves[data-dashboard-version="4"] .cu2-nav-favorites-item__item:not(.cu2-nav-favorites-item__item_selected):hover .cu2-nav-favorites-item__item-name-label {
+    color: var(--theme-main-color);
+}
+body.dash4-colored-faves[data-dashboard-version="4"] .cu2-nav-favorites-item_bar .cu2-nav-favorites-item__item.cu2-nav-favorites-item__item_selected .cu2-nav-favorites-item__item-name-label {
+    color: var(--theme-main-color);
+}
+body.dash4-colored-faves[data-dashboard-version="4"].dark-theme .cu2-nav-favorites-item_bar .cu2-nav-favorites-item__item_selected.cu2-header__btn {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-bottom: 0;
+    height: 24px;
     margin-top: 0;
-    margin-bottom: 0;
+    background-color: #1e272e;
 }
-.lv-task.lv-task_add.lv-task_add-empty {
-    margin-top: 0;
-    margin-bottom: 2px;
+body.dash4-colored-faves[data-dashboard-version="4"].dark-theme .cu2-nav-favorites-item_bar .cu2-nav-favorites-item__item_selected.cu2-header__btn .cu2-nav-favorites-item__item-name-label {
+    color: #fff;
 }
-/* Some clean up styles */
-.dark-theme .lv-new-task-btn:hover {
-    background-color: #575d63;
+body.dash4-colored-faves[data-dashboard-version="4"] .cu2-nav-favorites-item_bar .cu2-nav-favorites-item__item_selected.cu2-header__btn {
+    background: white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 32px;
+    margin-top: 8px;
+    padding-bottom: 8px;
+    cursor: default;
 }
-.box-loader .lv-status__label-content {
+body.dash4-colored-faves[data-dashboard-version="4"] .cu-nav-favorites-bar__unpin.icon {
+    fill: #fff;
+}
+body.dash4-colored-faves[data-dashboard-version="4"] .cu-nav-favorites-bar__unpin.icon:hover {
+    background: #fff;
+    fill: var(--theme-main-color);
+    border-radius: 3px;
+}
+
+/* Make list view w/breadcrumbs and subtasks more usable */
+body.clean-breadcrumbs .cu-task-row__main-icon-subtask {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    margin-right: 0;
+}
+body.clean-breadcrumbs .cu-task-row .cu-task-row-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+body.clean-breadcrumbs .cu-task-row-main .cu-task-row-breadcrumbs {
+    flex-grow: 1;
+    display: flex;
+    width: auto;
+}
+body.clean-breadcrumbs .cu-task-row-main .cu-task-row-main__link {
+    flex-basis: 100%;
+    height: auto;
+    padding: 0;
+}
+body.clean-breadcrumbs .cu-task-row-main__parent-name {
+    display: flex;
+}
+
+body.clean-breadcrumbs .cu-task-row-breadcrumbs ul {
+    display: inline-block;
+}
+body.clean-breadcrumbs .cu-task-row-main .cu-task-row-breadcrumbs ul a {
+    color: var(--theme-main-color-light);
+    font-size: 90%;
+}
+body.clean-breadcrumbs .cu-task-row-main .cu-task-row-breadcrumbs ul > li:first-child a {
+    color: var(--theme-main-color);
+}
+body.clean-breadcrumbs.dark-theme .cu-task-row-main .cu-task-row-breadcrumbs ul a {
+    color: var(--theme-main-color);
+}
+body.clean-breadcrumbs.dark-theme .cu-task-row-main .cu-task-row-breadcrumbs ul > li:first-child a {
+    color: var(--theme-main-color-light);
+}
+
+/* Better visibility in status labels */
+body.visible-status cu-task-list .cu-dashboard-table__header-status span {
+    color: gray;
+    mix-blend-mode: difference;
+}
+
+/* Wide Box view Me Mode */
+body.wide-box-mode  .cu-dashboard-box__scroll_me-mode .cu-user-box {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+body.wide-box-mode  .cu-dashboard-box__scroll_me-mode  .cu-user-box__scroll {
+    max-height: none;
+}
+
+body.wide-box-mode .cu-dashboard-box__scroll_me-mode .cu-workload-box {
     display: none;
 }
 
+/* for blurring tasks for screenshots */
+/*.cu-task-row-main__link-inner {filter: blur(3px);}*/
 
-/* The sortable title row will be part of the full width colored status, so make sure the text is legible */
-/*.lv-status-toolbar .lv-status-toolbar__item .sortable__title {
-    color: #fff;
-}
-.dark-theme .lv-status-toolbar .lv-status-toolbar__item .sortable__title {
-    color: inherit;
-}
-.dark-theme .lv-status[data-status=Open] .sortable__title {
-    color: #828588;
-}*/
-
-/* make status sections in each list blend in with the list */
-#dashboard-lv-container .lv-status {
-    margin-top: 0;
-}
-#dashboard-lv-container .lv-status .lv-status__label {
-    width: 100%;
-    height: 100%;
-    transform: none;
-    background-color: #fcfcfc;
-    box-shadow: 0 0 6px 0 rgba(0,0,0,.06);
-    background-image:  linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 70%); 
-}
-.dark-theme #dashboard-lv-container .lv-status .lv-status__label {
-    background-color: #333b42;
-    background-image: none;
-}
-#dashboard-lv-container .lv-status .lv-status__label .lv-status__label-content {
-    padding: 0;
-    border-radius: 0;
-    height: 100%;
-    text-indent: 20px;
-    width: 5px;
-    color: #343434;
-}
-.dark-theme #dashboard-lv-container .lv-status .lv-status__label .lv-status__label-content {
-    color: #828588;
-}
-
-/* BOX VIEW */
-/* We add a colored bar based on the status of the current section */
-.cu-panel-box__item {
-    position: relative;
-}
-.cu-plate__container .cu-plate_lg .cu-plate__badge:before {
-    display: block;
-    content: "";
-    position: absolute;
-    left: -24px;
-    width: 2px;
-    bottom:0;
-    top: 0;
-    background: currentColor;
-}
