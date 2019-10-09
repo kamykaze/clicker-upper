@@ -212,9 +212,10 @@ body.clean-breadcrumbs.dark-theme .cu-task-row-main .cu-task-row-breadcrumbs ul 
 }
 
 /* Better visibility in status labels */
-body.visible-status cu-task-list .cu-dashboard-table__header-status span {
-    color: gray;
-    mix-blend-mode: difference;
+body.visible-status cu-task-list .cu-dashboard-table__header-status {
+    border-bottom: 1px transparent;
+    background-image: linear-gradient(rgba(128,128,128, 0.35) 0%, rgba(128,128,128, 0) 90%) !important;
+    background-blend-mode: luminosity;
 }
 
 /* Wide Box view Me Mode */
