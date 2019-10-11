@@ -7,7 +7,7 @@ let options = [
 ]
 
 chrome.storage.sync.get(options, function(data) {
-    data.click_theme ? document.getElementById('id_option_click_theme').checked=true:null;
+    data.clickup_theme ? document.getElementById('id_option_clickup_theme').checked=true:null;
     data.dash4_colored_faves ? document.getElementById('id_option_dash4_colored_faves').checked=true:null;
     data.clean_breadcrumbs ? document.getElementById('id_option_clean_breadcrumbs').checked=true:null;
     data.visible_status ? document.getElementById('id_option_visible_status').checked=true:null;

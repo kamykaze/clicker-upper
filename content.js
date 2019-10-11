@@ -8,7 +8,7 @@ $(function() {
         'wide_box_mode'
     ]
     , function(data) {
-        data.click_theme? $('body').addClass('click-theme'):null;
+        data.clickup_theme? $('body').addClass('clickup-theme'):null;
         data.dash4_colored_faves? $('body').addClass('dash4-colored-faves'):null;
         data.clean_breadcrumbs? $('body').addClass('clean-breadcrumbs'):null;
         data.visible_status? $('body').addClass('visible-status'):null;
