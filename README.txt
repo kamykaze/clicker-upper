@@ -21,6 +21,7 @@ Box View
 
 Version History
 ---------------------
+0.9.6 - Fixed 'compact status group' to apply only to grouped lists. For lists grouped only by status, we don't change the styling
 0.9.5 - Added compact status groups in list view; cleaned up subtask icon in 'clean breadcrumbs' feature
 0.9.4 - improved breadcrumbs parent task styling; Fixed 'clickup theme' option not loading properly
 0.9.3 - Added Options page and ability to selective choose which features to enable.

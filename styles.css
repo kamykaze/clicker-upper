@@ -241,19 +241,19 @@ body.wide-box-mode .cu-dashboard-box__scroll_me-mode .cu-workload-box {
 }
 
 /* Compact Status Groups in List View */
-body.compact-status-group .cu-task-list-footer {
+body.compact-status-group .cu-list-group .cu-task-list-footer {
     display: none;
 }
-body.compact-status-group .cu-task-list:last-child .cu-task-list-footer {
+body.compact-status-group .cu-list-group .cu-task-list:last-child .cu-task-list-footer {
     display: flex;
 }
-body.compact-status-group .cu-task-list-header__item_main {
+body.compact-status-group .cu-list-group .cu-task-list-header__item_main {
     padding-top: 0;
 }
-body.compact-status-group .cu-task-list-header__items {
+body.compact-status-group .cu-list-group .cu-task-list-header__items {
     margin-top: 0;
 }
-body.compact-status-group .cu-task-list-header-settings .cu-dropdown .cu-task-list-header-settings__add {
+body.compact-status-group .cu-list-group .cu-task-list-header-settings .cu-dropdown .cu-task-list-header-settings__add {
     margin-top: 0;
 }
 
