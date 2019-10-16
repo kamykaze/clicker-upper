@@ -4,7 +4,8 @@ chrome.runtime.onInstalled.addListener(function() {
         dash4_colored_faves: true,
         clean_breadcrumbs: true,
         visible_status: true,
-        wide_box_mode: true
+        wide_box_mode: true,
+        compact_status_group: true
 	}
     chrome.storage.sync.set(default_options, function() {
       console.log("ClickerUpper Installed.");

@@ -3,7 +3,8 @@ let options = [
     'dash4_colored_faves',
     'clean_breadcrumbs',
     'visible_status',
-    'wide_box_mode'
+    'wide_box_mode',
+    'compact_status_group'
 ]
 
 chrome.storage.sync.get(options, function(data) {
@@ -12,6 +13,7 @@ chrome.storage.sync.get(options, function(data) {
     data.clean_breadcrumbs ? document.getElementById('id_option_clean_breadcrumbs').checked=true:null;
     data.visible_status ? document.getElementById('id_option_visible_status').checked=true:null;
     data.wide_box_mode ? document.getElementById('id_option_wide_box_mode').checked=true:null;
+    data.compact_status_group ? document.getElementById('id_compact_status_group').checked=true:null;
 
     for (var i in options) {
         var opt = options[i];

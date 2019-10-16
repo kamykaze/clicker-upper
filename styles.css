@@ -240,6 +240,23 @@ body.wide-box-mode .cu-dashboard-box__scroll_me-mode .cu-workload-box {
     display: none;
 }
 
+/* Compact Status Groups in List View */
+body.compact-status-group .cu-task-list-footer {
+    display: none;
+}
+body.compact-status-group .cu-task-list:last-child .cu-task-list-footer {
+    display: flex;
+}
+body.compact-status-group .cu-task-list-header__item_main {
+    padding-top: 0;
+}
+body.compact-status-group .cu-task-list-header__items {
+    margin-top: 0;
+}
+body.compact-status-group .cu-task-list-header-settings .cu-dropdown .cu-task-list-header-settings__add {
+    margin-top: 0;
+}
+
 /* for blurring tasks for screenshots */
 /*.cu-task-row-main__link-inner {filter: blur(3px);}*/
 
