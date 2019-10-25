@@ -191,6 +191,16 @@ body.clean-breadcrumbs .cu-task-row-main .cu-task-row-main__link {
     flex-basis: 100%;
     height: auto;
 }
+body.clean-breadcrumbs .cu-reminder-row-main .cu-reminder-row__title,
+body.clean-breadcrumbs .cu-task-row-main .cu-task-row-breadcrumbs + .cu-task-row-main__link .cu-task-row-main__link-text,
+body.clean-breadcrumbs .cu-task-row-main .cu-task-row-breadcrumbs + .cu-task-row-main__parent-name + .cu-task-row-main__link .cu-task-row-main__link-text {
+    font-weight: 500;
+}
+body.clean-breadcrumbs.dark-theme .cu-reminder-row-main .cu-reminder-row__title,
+body.clean-breadcrumbs.dark-theme .cu-task-row-main .cu-task-row-breadcrumbs + .cu-task-row-main__link .cu-task-row-main__link-text,
+body.clean-breadcrumbs.dark-theme .cu-task-row-main .cu-task-row-breadcrumbs + .cu-task-row-main__parent-name + .cu-task-row-main__link .cu-task-row-main__link-text {
+    font-weight: 600;
+}
 body.clean-breadcrumbs .cu-task-row-main__parent-name {
     display: flex;
     flex-grow: 1;
