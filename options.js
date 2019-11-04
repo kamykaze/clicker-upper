@@ -4,7 +4,8 @@ let options = [
     'clean_breadcrumbs',
     'visible_status',
     'wide_box_mode',
-    'compact_status_group'
+    'compact_status_group',
+    'same_line_tags'
 ]
 
 chrome.storage.sync.get(options, function(data) {
@@ -14,6 +15,7 @@ chrome.storage.sync.get(options, function(data) {
     data.visible_status ? document.getElementById('id_option_visible_status').checked=true:null;
     data.wide_box_mode ? document.getElementById('id_option_wide_box_mode').checked=true:null;
     data.compact_status_group ? document.getElementById('id_option_compact_status_group').checked=true:null;
+    data.same_line_tags ? document.getElementById('id_option_same_line_tags').checked=true:null;
 
     for (var i in options) {
         var opt = options[i];

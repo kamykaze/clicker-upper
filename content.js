@@ -6,7 +6,8 @@ $(function() {
         'clean_breadcrumbs',
         'visible_status',
         'wide_box_mode',
-        'compact_status_group'
+        'compact_status_group',
+        'same_line_tags'
     ]
     , function(data) {
         data.clickup_theme? $('body').addClass('clickup-theme'):null;
@@ -15,6 +16,7 @@ $(function() {
         data.visible_status? $('body').addClass('visible-status'):null;
         data.wide_box_mode? $('body').addClass('wide-box-mode'):null;
         data.compact_status_group? $('body').addClass('compact-status-group'):null;
+        data.same_line_tags? $('body').addClass('same-line-tags'):null;
     });
 
     const log_styles = [

@@ -267,6 +267,10 @@ body.compact-status-group .cu-list-group .cu-task-list-header-settings .cu-dropd
     margin-top: 0;
 }
 
+/* Same Line Tags */
+body.same-line-tags .cu-task-row-main__link-container { flex-direction: row; }
+
+
 /* for blurring tasks for screenshots */
 /*.cu-task-row-main__link-inner {filter: blur(3px);}*/
 

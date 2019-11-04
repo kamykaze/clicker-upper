@@ -21,6 +21,7 @@ Box View
 
 Version History
 ---------------------
+0.9.8 - Make task 'tags' appear on the same line as before
 0.9.7 - Minor improvement for 'cleaner breadcrumbs' feature. It now makes main task name bold (this was an issue if you picked black as your theme color)
 0.9.6 - Fixed 'compact status group' to apply only to grouped lists. For lists grouped only by status, we don't change the styling
 0.9.5 - Added compact status groups in list view; cleaned up subtask icon in 'clean breadcrumbs' feature
