@@ -274,6 +274,26 @@ body.compact-status-group .cu-list-group .cu-task-list-header-settings .cu-dropd
 body.same-line-tags .cu-task-row-main__link-container { flex-direction: row; }
 
 
+/* Better task tray close buttons */
+body.better-tasktray-close cu-minimize-tasks-keeper .minimize-item:hover .minimize-item__remove {
+    position: absolute;
+    top: -15px;
+    right: -3px;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #e9ebf0;
+}
+body.better-tasktray-close .minimize-item:hover .minimize-item__taskname::after {
+    width: 12px;
+}
+body.better-tasktray-close cu-minimize-tasks-keeper .minimize-item:hover {
+    overflow: visible;
+}
+
+
 /* for blurring tasks for screenshots */
 /*.cu-task-row-main__link-inner {filter: blur(3px);}*/
 
