@@ -168,6 +168,9 @@ body.dash4-colored-faves[data-dashboard-version="4"] .cu-nav-favorites-bar__unpi
     fill: var(--theme-main-color);
     border-radius: 3px;
 }
+body.dash4-colored-faves cu-task-keeper .task-container .task_subtask {
+    background: var(--theme-main-color);
+}
 
 /* Make list view w/breadcrumbs and subtasks more usable */
 body.clean-breadcrumbs .cu-task-row__main-icon-subtask {
