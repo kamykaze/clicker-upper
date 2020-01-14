@@ -301,6 +301,9 @@ body.modern-sticky-spaces .cu-manager2__container .cu2-sidebar__body_v5 .cu2-pro
     z-index: 2;
     background: #fff;
 }
+body.modern-sticky-spaces.dark-theme .cu-manager2__container .cu2-sidebar__body_v5 .cu2-project-list-bar-item__container {
+    background: #323940;
+}
 body.modern-sticky-spaces .layout-size_compact .nav-category__header {
   top: 34px;
 }
