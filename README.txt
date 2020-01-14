@@ -6,7 +6,7 @@ Features
 Header
 -------
 - ClickUp Brand theme header (adds multi-color gradient)
-- Colored Favorites Bar (for Dashboard 4.0)
+- Colored Favorites Bar (for Clean and Modern layouts)
 
 Project List View
 -----------------
@@ -21,6 +21,7 @@ Box View
 
 Version History
 ---------------------
+1.0.2 - Colored favorites bar upated to work with modern layout
 1.0.1 - Fixed Modern layout space name not being sticky
 1.0.0 - Made task tray close buttons smaller and out of the way
 0.9.9 - make subtask overlay border colored instead of gray (part of colored favorites bar option)

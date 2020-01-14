@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Clicker Upper",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A set of enhancements for [ClickUp](https://app.clickup.com).",
     "background": {
         "scripts": ["background.js"],
