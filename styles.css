@@ -294,6 +294,23 @@ body.better-tasktray-close cu-minimize-tasks-keeper .minimize-item:hover {
 }
 
 
+/* Sticky Space heading in Modern layout */
+body.modern-sticky-spaces .cu-manager2__container .cu2-sidebar__body_v5 .cu2-project-list-bar-item__container {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+}
+body.modern-sticky-spaces .layout-size_compact .nav-category__header {
+  top: 34px;
+}
+body.modern-sticky-spaces .layout-size_default .nav-category__header {
+  top: 38px;
+}
+body.modern-sticky-spaces .layout-size_large .nav-category__header {
+  top: 42px;
+}
+
 /* for blurring tasks for screenshots */
 /*.cu-task-row-main__link-inner {filter: blur(3px);}*/
 

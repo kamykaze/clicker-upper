@@ -6,7 +6,8 @@ let options = [
     'wide_box_mode',
     'compact_status_group',
     'same_line_tags',
-    'better_tasktray_close'
+    'better_tasktray_close',
+    'modern_sticky_spaces'
 ]
 
 chrome.storage.sync.get(options, function(data) {
@@ -18,6 +19,7 @@ chrome.storage.sync.get(options, function(data) {
     data.compact_status_group ? document.getElementById('id_option_compact_status_group').checked=true:null;
     data.same_line_tags ? document.getElementById('id_option_same_line_tags').checked=true:null;
     data.better_tasktray_close? document.getElementById('id_option_better_tasktray_close').checked=true:null;
+    data.modern_sticky_spaces? document.getElementById('id_option_modern_sticky_spaces').checked=true:null;
 
     for (var i in options) {
         var opt = options[i];

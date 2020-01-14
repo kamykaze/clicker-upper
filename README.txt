@@ -21,6 +21,7 @@ Box View
 
 Version History
 ---------------------
+1.0.1 - Fixed Modern layout space name not being sticky
 1.0.0 - Made task tray close buttons smaller and out of the way
 0.9.9 - make subtask overlay border colored instead of gray (part of colored favorites bar option)
 0.9.8 - Make task 'tags' appear on the same line as before
