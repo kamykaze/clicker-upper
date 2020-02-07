@@ -19,8 +19,13 @@ Box View
 --------
 - Me mode uses up all of the container's space
 
+Search Results
+--------------
+- Always show full breadcrumbs for tasks
+
 Version History
 ---------------------
+1.0.3 - Always show full breadcrumb/path for tasks in Search results
 1.0.2 - Colored favorites bar upated to work with modern layout
 1.0.1 - Fixed Modern layout space name not being sticky
 1.0.0 - Made task tray close buttons smaller and out of the way

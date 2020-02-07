@@ -9,6 +9,7 @@ chrome.runtime.onInstalled.addListener(function() {
         same_line_tags: true,
         better_tasktray_close: true,
         modern_sticky_spaces: true,
+        search_full_path: true,
 	}
     chrome.storage.sync.set(default_options, function() {
       console.log("ClickerUpper Installed.");

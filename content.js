@@ -10,6 +10,7 @@ $(function() {
         'same_line_tags',
         'better_tasktray_close',
         'modern_sticky_spaces',
+        'search_full_path',
     ]
     , function(data) {
         data.clickup_theme? $('body').addClass('clickup-theme'):null;
@@ -21,6 +22,7 @@ $(function() {
         data.same_line_tags? $('body').addClass('same-line-tags'):null;
         data.better_tasktray_close? $('body').addClass('better-tasktray-close'):null;
         data.modern_sticky_spaces? $('body').addClass('modern-sticky-spaces'):null;
+        data.search_full_path? $('body').addClass('search-full-path'):null;
     });
 
     const log_styles = [

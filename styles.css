@@ -329,6 +329,16 @@ body.modern-sticky-spaces .layout-size_large .nav-category__header {
   top: 42px;
 }
 
+body.search-full-path .cu-search-task-row .cu-search-modal__section-loc,
+body.search-full-path .cu-search-task-row .cu-search-task-row__section-loc {
+    display: block;
+    color: var(--theme-main-color);
+}
+body.search-full-path .cu-search-task-row .cu-search-modal__section-angle,
+body.search-full-path .cu-search-task-row .cu-search-task-row__section-angle {
+    display: inline-block;
+}
+
 /* for blurring tasks for screenshots */
 /*.cu-task-row-main__link-inner {filter: blur(3px);}*/
 
